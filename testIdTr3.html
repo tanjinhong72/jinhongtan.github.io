@@ -48,46 +48,8 @@ return output;
 </header>
 <body>
 <p> After Header </p>
-<script>/*analytics.identify("S1234567H",{
-	name: "Jin", //Send track call as "User Referred"
-	email: "tanjinhong72@gmail.com",
-	plan: "business"},
-//  "properties": formatQs()
-//  "properties":{
-//	"category": "Campaign",
-//	"label": "Test"
-//	}
-	{
-	campaign:{
-		name:'JHSite',
-		source: 'jhhost',
-		medium: 'PC'
-		},
-//	ip: '127.0.0.1'
-	}
-);*/
-analytics.identify("1234567895H",{
-      name: "Penny Gibbons", 
-      email: "PeG@email.com",
-	  from: "Signed In"}
-//	  context: {ip: '8.8.8.8'}
-//	  "ip": "68.33.50.64"
-  );
-	
-/*analytics.identify({}
-  );*/
-
-analytics.track("Signed In", {
-  userId: "1234567895H", //event property
-  name: "Penny Gibbons", //event property
-  properties: {
-    //reevenu: 42,
-    //shippingMethod: '2-day'
-	jintest: 'test',
-    utm_source_test: 'Jsource'
-  }
-});
-//analytics.track("1234567891H",{"utm_source [last_touch]":"test"});
+<script>
+analytics.track('Test event', {property1:'value', email:'test_user2@segment.com'});
 </script>
 <p>After Track</p>
 </body>
