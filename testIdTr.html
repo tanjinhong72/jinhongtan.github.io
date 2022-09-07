@@ -66,18 +66,18 @@ return output;
 //	ip: '127.0.0.1'
 	}
 );*/
-analytics.identify("1234567896H",{
+	
+/*analytics.identify("1234567896H",{
       name: "Pierce Gibbons", 
       email: "PrG@email.com",
 	  from: "Signed In"}
 //	  context: {ip: '8.8.8.8'}
 //	  "ip": "68.33.50.64"
-  );
+  );*/
 	
 /*analytics.identify({}
   );*/
-
-analytics.track("Signed In", {
+/*analytics.track("Signed In", {
   userId: "1234567896H", //event property
   name: "Penny Gibbons", //event property
   properties: {
@@ -86,8 +86,12 @@ analytics.track("Signed In", {
 	jintest: 'test',
     utm_source_test: 'Jsource'
   }
-});
+});*/
 //analytics.track("1234567891H",{"utm_source [last_touch]":"test"});
+
+//For Personas Training
+analytics.identify({first_name:'Test', last_name: 'User', email:'test_user@segment.com'});
+	
 </script>
 <p>After Track</p>
 </body>
