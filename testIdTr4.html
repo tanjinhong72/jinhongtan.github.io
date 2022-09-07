@@ -49,9 +49,13 @@ return output;
 <body>
 <p> After Header </p>
 <script>
+//Personas Training
 analytics.reset();
+	
 analytics.identify({email:'test_user3@segment.com'});
+	
 analytics.identify(‘00001’, {email: 'test_user4@segment.com'});
+
 </script>
 <p>After Track</p>
 </body>
