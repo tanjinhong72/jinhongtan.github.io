@@ -15,6 +15,9 @@
 <h1>What is your favorite place to travel?</h1> 
 <p>I am building a directory of the sweetest travel destinations.</p>  
 <form name="travel" onsubmit="identify(event)">
+    User ID
+    <input name="userid" required="" size="20" type="text"/> 
+    <br><br><br> 
      What is your favorite travel destination?
     <input name="destination" required="" size="81" type="text"/> 
     <br><br><br> 
@@ -38,13 +41,16 @@
         var fullname = form["fullname"].value;
         var destination = form["destination"].value;
         var details = form["details"].value;
+        //Added by Jin
+        var userid = form["userid"].value;
+          
         var user = {
             email: email, 
             name: fullname, 
             destination: destination, 
             details: details
         };
-        analytics.identify('1234', {
+        analytics.identify(userid, {
             email: email, 
             name: fullname
         });
