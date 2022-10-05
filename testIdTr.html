@@ -87,11 +87,24 @@ return output;
     utm_source_test: 'Jsource'
   }
 });*/
+
+analytics.track("Testevent", {
+  userId: "1234567896H", //event property
+  name: "Penny Gibbons", //event property
+  properties: {
+	property1: "property1",
+  };
+  campaign:{
+   name: "CampaignName",
+   source: "myPage",
+   medium: "SocialMedia"
+ },
+});
 //analytics.track("1234567891H",{"utm_source [last_touch]":"test"});
 
 //For Personas Training
-analytics.reset();
-analytics.identify({first_name:'Test4', last_name: 'User', email:'test4_user1@segment.com'});
+//analytics.reset();
+//analytics.identify({first_name:'Test4', last_name: 'User', email:'test4_user1@segment.com'});
 //analytics.identify(‘00001);
 	
 </script>
