@@ -54,11 +54,9 @@
             email: email, 
             name: fullname
         },{
-            integrations: {
                 MailChimp: {
                     listId: 'mylist_1234'
             }
-           }
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
